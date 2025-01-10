@@ -66,6 +66,14 @@ fn array_declaration() {
     println!("third array val: {_val}");
 }
 
+fn fun_fun() {
+
+    let x = 2.0;
+  
+    println!("{x}");
+  
+  }
+
 fn main() {
 
     mutability();
@@ -76,4 +84,5 @@ fn main() {
     how_to_char();
     tuple_declaration();
     array_declaration();
+    fun_fun();
 }
