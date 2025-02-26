@@ -8,6 +8,7 @@ impl Rectangle {
     fn area(&self) -> u32 {
         self.width * self.height
     }
+
 }
 
 
@@ -23,5 +24,9 @@ fn main() {
     println!("rect1 is {rect_1:#?}");
     dbg!(&rect_1);
     let area_1 = rect_1.area();
-    println!("rect1 is {area_1}")
+    println!("rect1 is {area_1}");
+
+    let area1 = rect_1.area();
+    let area2 = Rectangle::area(&rect_1);
+    assert_eq!(area1, area2);
 }
